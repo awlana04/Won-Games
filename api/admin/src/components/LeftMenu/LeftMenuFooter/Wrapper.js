@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
 
 const Wrapper = styled.div`
   position: absolute;
@@ -25,23 +24,5 @@ const Wrapper = styled.div`
     }
   }
 `;
-
-Wrapper.defaultProps = {
-  theme: {
-    main: {
-      colors: {
-        strapi: {},
-      },
-      sizes: {
-        header: {},
-        leftMenu: {},
-      },
-    },
-  },
-};
-
-Wrapper.propTypes = {
-  theme: PropTypes.object,
-};
 
 export default Wrapper;
